@@ -10,7 +10,7 @@ public class Node {
         this.id = id;
     }
 
-    List<Node> children = new ArrayList<>();
+    ArrayList<Node> children = new ArrayList<>();
 
     public Integer getId() {
         return id;
@@ -24,7 +24,7 @@ public class Node {
         return children;
     }
 
-    public void setChildren(List<Node> children) {
+    public void setChildren(ArrayList<Node> children) {
         this.children = children;
     }
 
