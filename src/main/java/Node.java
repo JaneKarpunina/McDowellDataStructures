@@ -12,6 +12,8 @@ public class Node {
 
     ArrayList<Node> children = new ArrayList<>();
 
+    Node parent;
+
     public Integer getId() {
         return id;
     }
@@ -30,6 +32,14 @@ public class Node {
 
     public void addChild(Node child) {
         children.add(child);
+    }
+
+    public Node getParent() {
+        return parent;
+    }
+
+    public void setParent(Node parent) {
+        this.parent = parent;
     }
 
     @Override
