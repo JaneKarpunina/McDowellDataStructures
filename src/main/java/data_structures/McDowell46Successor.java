@@ -1,8 +1,10 @@
+package data_structures;
+
 import java.util.List;
 
 public class McDowell46Successor {
 
-    Node findNextNodeBST(Node node) {
+    public Node findNextNodeBST(Node node) {
 
         List<Node> children = node.getChildren();
 

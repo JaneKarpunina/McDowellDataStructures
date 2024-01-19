@@ -1,3 +1,7 @@
+package data_structures;
+
+import data_structures.McDowell45ValidateBST;
+import data_structures.Node;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

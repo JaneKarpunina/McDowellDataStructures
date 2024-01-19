@@ -1,3 +1,5 @@
+package data_structures;
+
 import java.util.Objects;
 
 public class Values {

@@ -1,3 +1,7 @@
+package data_structures;
+
+import data_structures.McDowell42MinimalTree;
+import data_structures.Node;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

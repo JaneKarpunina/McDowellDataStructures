@@ -1,8 +1,10 @@
+package data_structures;
+
 import java.util.List;
 
 public class McDowell45ValidateBST {
 
-    boolean validateBST(Node root) {
+    public boolean validateBST(Node root) {
 
         if (root == null) {
            return true;

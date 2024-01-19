@@ -1,8 +1,8 @@
-import java.util.Arrays;
+package data_structures;
 
 public class McDowell42MinimalTree {
 
-    Node createMinTree(int[] array, int start, int end) {
+    public Node createMinTree(int[] array, int start, int end) {
 
         if (start > end) {
             return null;

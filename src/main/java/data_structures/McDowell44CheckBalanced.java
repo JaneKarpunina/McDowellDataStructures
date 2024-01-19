@@ -1,8 +1,10 @@
+package data_structures;
+
 import java.util.List;
 
 public class McDowell44CheckBalanced {
 
-    boolean checkBalanced(Node root) {
+    public boolean checkBalanced(Node root) {
         if (root == null) {
             return true;
         }
