@@ -16,6 +16,9 @@ public class Node {
 
     Node parent;
 
+    boolean marked = false;
+    boolean markedSecond = false;
+
     public Integer getId() {
         return id;
     }
@@ -42,6 +45,22 @@ public class Node {
 
     public void setParent(Node parent) {
         this.parent = parent;
+    }
+
+    public boolean isMarked() {
+        return marked;
+    }
+
+    public void setMarked(boolean marked) {
+        this.marked = marked;
+    }
+
+    public boolean isMarkedSecond() {
+        return markedSecond;
+    }
+
+    public void setMarkedSecond(boolean markedSecond) {
+        this.markedSecond = markedSecond;
     }
 
     @Override
