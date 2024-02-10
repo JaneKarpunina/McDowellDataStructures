@@ -25,4 +25,17 @@ public class Node<T> {
 
     }
 
+    public void appendToTail(Node<T> node){
+
+        Node<T> current = this;
+
+        while(current.next != null) {
+
+            current = current.next;
+        }
+
+        current.next = node;
+
+    }
+
 }
