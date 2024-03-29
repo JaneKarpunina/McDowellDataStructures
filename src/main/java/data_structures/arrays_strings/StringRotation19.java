@@ -29,7 +29,7 @@ public class StringRotation19 {
             return false;
         } else {
 
-            // would use equals here, but need to use contains ??
+            // would use equals here, but need to use contains
             return s2.substring(0, s2.length() - indexFirstString)
                     .contains(s1.subSequence(indexFirstString, s1.length()));
         }
