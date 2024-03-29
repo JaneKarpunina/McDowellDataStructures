@@ -17,6 +17,11 @@ class IsUnique11Test {
         array = "asbcvridlKssk".toCharArray();
         assertFalse(isUnique11.isUnique(array));
 
+        assertTrue(isUnique11.isUnique("asbcvridlk", true));
+        assertTrue(isUnique11.isUnique("asbcvridlk127KTDq", false));
+
+        assertFalse(isUnique11.isUnique("asbcvrivdlk", true));
+        assertFalse(isUnique11.isUnique("asbcvridlk127KTDqfi", false));
 
     }
 }

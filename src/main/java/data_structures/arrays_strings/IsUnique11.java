@@ -2,6 +2,59 @@ package data_structures.arrays_strings;
 
 public class IsUnique11 {
 
+    private static final int SYMBOLS_NUMBER_ASCII = 128;
+
+
+    public boolean isUnique(String s, boolean lowCaseLetters) {
+
+        //for low case letters
+        if (lowCaseLetters) {
+            return checkWithBitVector(s);
+        }
+        //for ascii
+        return checkWithAdditionalArray(s);
+
+    }
+
+    private boolean checkWithAdditionalArray(String s) {
+
+        if (s.length() > SYMBOLS_NUMBER_ASCII) return false;
+
+        boolean[] array = new boolean[SYMBOLS_NUMBER_ASCII];
+
+        for (int i = 0; i < s.length(); i++) {
+
+            int number = s.charAt(i);
+            if (array[number]) {
+                return false;
+            }
+
+            array[number] = true;
+
+        }
+        return true;
+    }
+
+    private boolean checkWithBitVector(String s) {
+
+        int vector = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+
+            int number = s.charAt(i) - 'a';
+
+            if ((vector & 1 << number) != 0) {
+
+                return false;
+            }
+
+            vector |= 1 << number;
+
+        }
+
+        return true;
+    }
+
 
     public boolean isUnique(char[] array) {
 
