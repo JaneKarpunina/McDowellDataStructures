@@ -65,7 +65,7 @@ public class McDowell47BuildOrder {
             Node dependency = pair.getDependency();
 
             List<Node> projectList = projects.stream().filter(e -> e.getId().equals(dependant.getId()))
-                    .collect(Collectors.toList());
+                    .toList();
 
             if (!projectList.isEmpty()) {
                 Node project = projectList.get(0);
