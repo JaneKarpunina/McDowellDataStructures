@@ -8,38 +8,41 @@ public class PalindromePermutation14 {
 
         String stringWithNoSpaces = s.replaceAll("\\s", "").toLowerCase();
 
-        int[] counts = new int[LOW_CASE_LETTERS_COUNT];
+        int counts = 0;
 
         for (int i = 0; i < stringWithNoSpaces.length(); i++) {
 
             int number = stringWithNoSpaces.charAt(i) - 'a';
 
-            counts[number]++;
+            if ((counts & 1 << number) != 0) {
+                counts &= ~(1 << number);
+            } else {
+                counts |= 1 << number;
+            }
 
         }
 
         int size = stringWithNoSpaces.length();
 
         boolean isOdd = size % 2 != 0;
+
+        if (!isOdd) {
+            return counts == 0;
+        }
         boolean oddFound = false;
-        int count = 0;
 
         for (int i = 0; i < LOW_CASE_LETTERS_COUNT; i++) {
-            count = counts[i];
 
-            if (count % 2 != 0) {
+            if ((counts & 1 << i) != 0) {
 
-                if (!isOdd) {
+                if (oddFound) {
                     return false;
-                } else {
-                    if (oddFound) {
-                        return false;
-                    } else {
-                        oddFound = true;
-                    }
-                }
 
+                } else {
+                    oddFound = true;
+                }
             }
+
         }
 
         return true;

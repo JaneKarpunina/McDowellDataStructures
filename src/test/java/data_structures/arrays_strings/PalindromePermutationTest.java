@@ -14,15 +14,12 @@ class PalindromePermutationTest {
         assertTrue(palindromePermutation14.isPalindromePermutation(s));
 
         s = "asb  Jkhhjb As";
-        palindromePermutation14 = new PalindromePermutation14();
         assertTrue(palindromePermutation14.isPalindromePermutation(s));
 
         s = "asb  Jkhhjb Asf";
-        palindromePermutation14 = new PalindromePermutation14();
         assertFalse(palindromePermutation14.isPalindromePermutation(s));
 
         s = "asb  Jkhhjb Ask";
-        palindromePermutation14 = new PalindromePermutation14();
         assertTrue(palindromePermutation14.isPalindromePermutation(s));
     }
 }
