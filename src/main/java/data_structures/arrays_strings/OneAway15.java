@@ -34,9 +34,7 @@ public class OneAway15 {
             }
             int j = 0;
 
-            if (isOneAway(first, second, minLength, changed)) return false;
-
-            return true;
+            return !isOneAway(first, second, minLength, changed);
         }
     }
 
