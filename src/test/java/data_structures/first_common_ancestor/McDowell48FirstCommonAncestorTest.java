@@ -1,6 +1,6 @@
 package data_structures.first_common_ancestor;
 
-import data_structures.Node;
+import data_structures.trees_graphs.Node;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

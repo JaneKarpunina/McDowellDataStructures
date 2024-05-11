@@ -1,6 +1,6 @@
 package data_structures.build_order47;
 
-import data_structures.Node;
+import data_structures.trees_graphs.Node;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

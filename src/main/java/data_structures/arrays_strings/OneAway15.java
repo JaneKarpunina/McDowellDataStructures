@@ -38,7 +38,8 @@ public class OneAway15 {
         }
     }
 
-    private static boolean isOneAway(String first, String second, int minLength, boolean changed) {
+    private static boolean isOneAway(String first, String second,
+                                     int minLength, boolean changed) {
         int j;
         for (int i = 0; i < minLength; i++) {
             if (changed) {

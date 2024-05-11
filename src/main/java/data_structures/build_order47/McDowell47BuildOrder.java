@@ -1,12 +1,10 @@
 package data_structures.build_order47;
 
-import data_structures.Graph;
-import data_structures.Node;
+import data_structures.trees_graphs.Node;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class McDowell47BuildOrder {
 

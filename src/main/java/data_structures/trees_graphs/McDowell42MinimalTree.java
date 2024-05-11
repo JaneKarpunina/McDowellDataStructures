@@ -1,4 +1,4 @@
-package data_structures;
+package data_structures.trees_graphs;
 
 public class McDowell42MinimalTree {
 
