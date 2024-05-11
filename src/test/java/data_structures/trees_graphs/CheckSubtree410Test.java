@@ -40,6 +40,11 @@ class CheckSubtree410Test {
         searched1.setChildren(new ArrayList<>(Arrays.asList(searched2, searched3)));
         assertFalse(checkSubtree410.isSubtree(node1, searched1));
 
+        searched3 = new Node(6);
+        searched1.setChildren(new ArrayList<>(Arrays.asList(searched2, searched3)));
+        Node searched4 = new Node(2);
+        searched3.setChildren(new ArrayList<>(List.of(searched4)));
+        assertTrue(checkSubtree410.isSubtree(node1, searched1));
 
     }
 }
