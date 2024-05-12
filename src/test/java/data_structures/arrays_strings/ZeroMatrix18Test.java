@@ -1,8 +1,7 @@
 package data_structures.arrays_strings;
 
+import data_structures.trees_graphs.ZeroMatrix18;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ZeroMatrix18Test {
 

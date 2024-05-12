@@ -45,6 +45,5 @@ class CheckSubtree410Test {
         Node searched4 = new Node(2);
         searched3.setChildren(new ArrayList<>(List.of(searched4)));
         assertTrue(checkSubtree410.isSubtree(node1, searched1));
-
     }
 }

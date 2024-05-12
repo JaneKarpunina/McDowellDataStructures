@@ -1,4 +1,4 @@
-package data_structures;
+package data_structures.trees_graphs;
 
 import data_structures.trees_graphs.McDowell42MinimalTree;
 import data_structures.trees_graphs.Node;
