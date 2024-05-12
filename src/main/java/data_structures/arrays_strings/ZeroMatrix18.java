@@ -1,4 +1,4 @@
-package data_structures.trees_graphs;
+package data_structures.arrays_strings;
 
 import java.util.Arrays;
 
