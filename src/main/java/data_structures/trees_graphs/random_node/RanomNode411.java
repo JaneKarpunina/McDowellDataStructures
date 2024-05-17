@@ -91,6 +91,21 @@ public class RanomNode411<T extends Comparable<T>> {
     }
 
     Node<T> getRandomNode() {
+        return getRandomNode(head);
+    }
+
+    Node<T> getRandomNode(Node<T> head) {
+      int randomInt = (int) (Math.random() * (head.size) - 1) + 1;
+
+      if (randomInt == 1) {
+          return head;
+      }
+      if (head.left == null || randomInt >= 2 + head.left.size) {
+          return getRandomNode(head.right);
+      }
+      else if (head.right == null || randomInt >= 2 && randomInt  <= head.left.size + 1) {
+          return getRandomNode(head.left);
+      }
 
     }
 }
