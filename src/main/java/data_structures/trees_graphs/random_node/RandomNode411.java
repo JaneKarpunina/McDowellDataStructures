@@ -1,10 +1,10 @@
 package data_structures.trees_graphs.random_node;
 
-public class RanomNode411<T extends Comparable<T>> {
+public class RandomNode411<T extends Comparable<T>> {
 
     Node<T> head;
 
-    void insert(T value) {
+    public void insert(T value) {
         Node<T> newNode = new Node<T>(value);
         newNode.size = 1;
         if (head == null) head = newNode;
@@ -37,7 +37,7 @@ public class RanomNode411<T extends Comparable<T>> {
         }
     }
 
-    void delete(T value) {
+    public void delete(T value) {
         deleteNode(value, head);
     }
 
@@ -78,7 +78,7 @@ public class RanomNode411<T extends Comparable<T>> {
         left = null;
     }
 
-    Node<T> find(T value, Node<T> head) {
+    public Node<T> find(T value, Node<T> head) {
        if (head == null) return null;
 
        if (value.equals(head.value)) return head;
@@ -90,13 +90,13 @@ public class RanomNode411<T extends Comparable<T>> {
        }
     }
 
-    Node<T> getRandomNode() {
+    public Node<T> getRandomNode() {
+        if (head == null) return null;
         return getRandomNode(head);
     }
 
-    Node<T> getRandomNode(Node<T> head) {
+    private Node<T> getRandomNode(Node<T> head) {
       int randomInt = (int) (Math.random() * (head.size) - 1) + 1;
-
       if (randomInt == 1) {
           return head;
       }
@@ -106,6 +106,8 @@ public class RanomNode411<T extends Comparable<T>> {
       else if (head.right == null || randomInt >= 2 && randomInt  <= head.left.size + 1) {
           return getRandomNode(head.left);
       }
+
+      return null;
 
     }
 }
