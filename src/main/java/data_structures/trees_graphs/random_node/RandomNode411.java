@@ -38,7 +38,7 @@ public class RandomNode411<T extends Comparable<T>> {
         }
     }
 
-    public void delete(T value) {
+    /*public void delete(T value) {
         deleteNode(value, head);
     }
 
@@ -55,7 +55,7 @@ public class RandomNode411<T extends Comparable<T>> {
         else {
             deleteNode(value, head.right);
         }
-    }
+    }*/
 
     private void findInorderSuccessor(Node<T> head) {
         Node<T> right = head.right;
@@ -77,6 +77,10 @@ public class RandomNode411<T extends Comparable<T>> {
         }
         head.value = left.value;
         left = null;
+    }
+
+    public Node<T> find(T value) {
+       return find(value, head);
     }
 
     public Node<T> find(T value, Node<T> head) {
