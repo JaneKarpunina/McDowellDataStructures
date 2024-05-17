@@ -8,8 +8,9 @@ public class RandomNode411<T extends Comparable<T>> {
         Node<T> newNode = new Node<T>(value);
         newNode.size = 1;
         if (head == null) head = newNode;
-
-        insertNode(newNode, head);
+        else {
+          insertNode(newNode, head);
+         }
     }
 
     private void insertNode(Node<T> newNode, Node<T> head) {
