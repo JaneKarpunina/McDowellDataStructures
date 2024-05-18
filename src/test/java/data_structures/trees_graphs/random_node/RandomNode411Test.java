@@ -29,6 +29,26 @@ class RandomNode411Test {
     }
 
     @Test
+    void delete() {
+        RandomNode411<Integer> randomNode411 = new RandomNode411<>();
+        randomNode411.insert(10);
+        randomNode411.insert(7);
+        randomNode411.insert(5);
+        randomNode411.insert(12);
+        randomNode411.insert(11);
+        randomNode411.insert(14);
+        randomNode411.insert(16);
+
+        randomNode411.delete(7);
+        randomNode411.delete(12);
+        randomNode411.delete(14);
+
+        System.out.println();
+
+
+    }
+
+    @Test
     void getRandomNode() {
 
         RandomNode411<Integer> randomNode411 = new RandomNode411<>();
